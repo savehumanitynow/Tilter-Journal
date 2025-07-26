@@ -6,6 +6,12 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		8F0A39432E2AA8410087D354 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8F0A39422E2AA8410087D354 /* Assets.xcassets */; };
+		8F60DDE72E28256B00DC35A7 /* SceneKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8F60DDE62E28256B00DC35A7 /* SceneKit.framework */; };
+		8F8349492E3565F400A2D21C /* Secrets.plist in Resources */ = {isa = PBXBuildFile; fileRef = 8F8349482E3565F400A2D21C /* Secrets.plist */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXContainerItemProxy section */
 		8F60DD9B2E28207B00DC35A7 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -24,25 +30,18 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		8F0A39422E2AA8410087D354 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8F60DD882E28207900DC35A7 /* Tilter Journal.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Tilter Journal.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8F60DD9A2E28207B00DC35A7 /* Tilter JournalTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Tilter JournalTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8F60DDA42E28207B00DC35A7 /* Tilter JournalUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Tilter JournalUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		8F60DDE62E28256B00DC35A7 /* SceneKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SceneKit.framework; path = System/Library/Frameworks/SceneKit.framework; sourceTree = SDKROOT; };
+		8F8349482E3565F400A2D21C /* Secrets.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Secrets.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		8F60DD8A2E28207900DC35A7 /* Tilter Journal */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			path = "Tilter Journal";
-			sourceTree = "<group>";
-		};
-		8F60DD9D2E28207B00DC35A7 /* Tilter JournalTests */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			path = "Tilter JournalTests";
-			sourceTree = "<group>";
-		};
-		8F60DDA72E28207B00DC35A7 /* Tilter JournalUITests */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			path = "Tilter JournalUITests";
 			sourceTree = "<group>";
 		};
 /* End PBXFileSystemSynchronizedRootGroup section */
@@ -52,6 +51,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8F60DDE72E28256B00DC35A7 /* SceneKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -75,10 +75,11 @@
 		8F60DD7F2E28207900DC35A7 = {
 			isa = PBXGroup;
 			children = (
+				8F8349482E3565F400A2D21C /* Secrets.plist */,
 				8F60DD8A2E28207900DC35A7 /* Tilter Journal */,
-				8F60DD9D2E28207B00DC35A7 /* Tilter JournalTests */,
-				8F60DDA72E28207B00DC35A7 /* Tilter JournalUITests */,
+				8F60DDE52E28256B00DC35A7 /* Frameworks */,
 				8F60DD892E28207900DC35A7 /* Products */,
+				8F0A39422E2AA8410087D354 /* Assets.xcassets */,
 			);
 			sourceTree = "<group>";
 		};
@@ -90,6 +91,14 @@
 				8F60DDA42E28207B00DC35A7 /* Tilter JournalUITests.xctest */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		8F60DDE52E28256B00DC35A7 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8F60DDE62E28256B00DC35A7 /* SceneKit.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -130,9 +139,6 @@
 			dependencies = (
 				8F60DD9C2E28207B00DC35A7 /* PBXTargetDependency */,
 			);
-			fileSystemSynchronizedGroups = (
-				8F60DD9D2E28207B00DC35A7 /* Tilter JournalTests */,
-			);
 			name = "Tilter JournalTests";
 			packageProductDependencies = (
 			);
@@ -153,9 +159,6 @@
 			dependencies = (
 				8F60DDA62E28207B00DC35A7 /* PBXTargetDependency */,
 			);
-			fileSystemSynchronizedGroups = (
-				8F60DDA72E28207B00DC35A7 /* Tilter JournalUITests */,
-			);
 			name = "Tilter JournalUITests";
 			packageProductDependencies = (
 			);
@@ -175,6 +178,7 @@
 				TargetAttributes = {
 					8F60DD872E28207900DC35A7 = {
 						CreatedOnToolsVersion = 16.4;
+						LastSwiftMigration = 1640;
 					};
 					8F60DD992E28207B00DC35A7 = {
 						CreatedOnToolsVersion = 16.4;
@@ -212,6 +216,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8F8349492E3565F400A2D21C /* Secrets.plist in Resources */,
+				8F0A39432E2AA8410087D354 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -395,6 +401,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = Q9C244W7YU;
@@ -413,6 +420,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.spiral.tilter.Tilter-Journal";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -423,6 +431,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = Q9C244W7YU;
